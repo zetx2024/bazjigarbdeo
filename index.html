@@ -1,118 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.70;">
-    <title>BDEO - Shell by Sanaul Haque</title>
-    <meta property="og:title" content="BDEO">
-    <meta property="og:image" content="img/og.png">
-    <meta property="og:description" content="This is a website where you can add photos to frames.">
-    <meta name="msapplication-TileColor" content="#af0a1a">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="shortcut icon" href="img/fav-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/fav-16.png">
-    <link rel="apple-touch-icon" href="img/fav-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/fav-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/fav-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/fav-144.png">
-    <link rel="manifest" href="pwa-manifest.json">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <style type="text/css">
-    button, label, canvas, div {
-      box-sizing: border-box;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh Economics Olympiad 2025</title>
+  <style>
+    :root {
+      --main-color: #28a745;
+      --secondary-color: #e9f5ec;
+      --text-color: #333;
     }
 
-     #input-file {
-      position: absolute;
-      left: -10000px;
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--secondary-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
     }
 
-    #preview {
-      border: 1px solid #eee;
-      margin: 10px 0;
-      background: #eee;
-      width: 100%;
-    }
-
-    .frame-option {
-      padding: 10px;
-      line-height: 0;
-      width: 25%;
-      background: transparent;
-      border: 0;
-    }
-
-    .frame-option:focus {
-      border: 1px solid #669ada;
-      outline: none;
-      position: relative;
-      padding: 9px;
-      border-radius: 10px;
-    }
-
-    .frame-option img {
-      border-radius: 5px;
-      background-image: url(./placeholder.PNG);
-      background-size: 100% 100%;
-      pointer-events: none;
-    }
-
-    .frame-option:not(:first-child) {
-      margin-left: -1px;
-    }
-
-    .wrapper {
-      width: 100%;
-      padding: 10px;
-      max-width: 360px;
-      min-width: 240px;
-      margin: 0 auto;
-    }
-
-    .action {
-      font-size: 13px;
-      text-decoration: none;
-      cursor: pointer;
-      color: #669ada;
-      padding: 10px 20px;
-      border-radius: 50px;
-      border: 1px solid;
-      display: block;
-      text-align: center;
-    }
-
-    .action[href=''] {
-      display: none;
-    }
-
-    .buttons {
-      flex-wrap: wrap;
+    header {
+      background-color: var(--main-color);
+      padding: 1rem 2rem;
       display: flex;
-      margin-bottom: 10px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 2rem;
+      background-color: #ffffff;
+    }
+
+    .hero h2 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+
+    .countdown {
+      font-size: 2rem;
+      color: var(--main-color);
+      margin: 1rem 0;
+    }
+
+    .btn-register {
+      position: relative;
+      background-color: var(--main-color);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      text-decoration: none;
+      overflow: hidden;
+    }
+
+    .btn-register span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-register::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.4);
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      animation: ripple 2s infinite ease-out;
+      z-index: 0;
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-icons {
+      margin-top: 0.5rem;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <article>
-    <center>
-    <h1> BDEO Under Construction!</h1>
-</center>
-    <p></p>
 
-    
-  
-        
-  <p></p>
-        
+  <header>
+    <h1>BDEO 2025</h1>
+    <nav>
+      <a href="https://reg.bdeo.org">Registration Now</a>
+      <a href="#previous-questions">Previous Questions</a>
+    </nav>
+  </header>
 
-        
-  </article>
+  <section class="hero">
+    <h2>Bangladesh Economics Olympiad 2025</h2>
+    <div class="countdown" id="countdown"></div>
+    <a href="https://reg.bdeo.org" class="btn-register" target="_blank"><span>Register Now</span></a>
+  </section>
+
+  <section id="registration" style="padding: 2rem;">
+    <h2>Registration</h2>
+    <p>Click the button above to complete your registration through the official Google Form.</p>
+  </section>
+
+  <section id="previous-questions" style="padding: 2rem;">
+    <h2>Previous Questions</h2>
+    <ul>
+      <li><a href="#">Question Set 2021</a></li>
+      <li><a href="#">Question Set 2022</a></li>
+      <li><a href="#">Question Set 2023</a></li>
+      <li><a href="#">Question Set 2024</a></li>
+    </ul>
+  </section>
+
   <footer>
-  <p><a target="_blank" rel="noopener" href="https://md-sanaul-haque-shanto.github.io/">Copyright © Bangladesh Economics Olympiad 2024 by Md Sanaul Haque Shanto.</a></p>
-</footer>
-    
+    &copy; Bangladesh Economics Olympiad 2025 by  <a href="https://www.facebook.com/YourPageLinkHere" target="_blank">Md Sanaul Haque Shanto</a>.
+    <div class="social-icons">
+      <a href="https://www.facebook.com/YourPageLinkHere" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const countdownEl = document.getElementById('countdown');
+    const targetDate = new Date('May 1, 2025 00:00:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        countdownEl.innerHTML = "Registration Open!";
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+
 </body>
 </html>
