@@ -151,6 +151,36 @@
         margin: 0.5rem 0;
       }
     }
+.gallery-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  max-height: 120px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
   </style>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -189,13 +219,21 @@
 
     </ul>
   </section>
-
+    
+<section id="Our_Affiliates" class="gallery-section">
+  <h2>Our Affiliates</h2>
+  <div class="gallery">
+    <img src="https://files.ieo-official.org/Logo/Logo_IEO_RGB_main_2.png" alt="International Economics Olympiad (IEO)">
+    <img src="https://exam.bdeo.org/wec.png" alt="World Economics Cup">
+  </div>
+</section>
+    
   <footer>
      <div class="social-icons">
       <a href="https://www.facebook.com/BdEO.Official" target="_blank"> Find us on <i class="fab fa-facebook"></i></a>
     </div> 
   </br>
-    &copy; Bangladesh Economics Olympiad Foundation Built with ❤️ by  <a href="https://md-sanaul-haque-shanto.github.io/" target="_blank">Sanaul Haque</a>.
+    &copy; Bangladesh Economics Olympiad Foundation Built with ❤️ by  <a href="https://md-sanaul-haque-shanto.github.io/" target="_blank">Md Sanaul Haque Shanto</a>.
    
   </footer>
 
