@@ -22,7 +22,7 @@ function getGooglePaymentsConfiguration() {
 }
 
 function onGooglePayLoaded() {
-  paymentsClient = new google.payments.api.PaymentsClient({ environment: 'TEST' });
+  paymentsClient = new google.payments.api.PaymentsClient({ environment: 'PRODUCTION' });
 
   paymentsClient.isReadyToPay(getGooglePaymentsConfiguration())
     .then(function(response) {
@@ -46,7 +46,7 @@ function getPaymentDataRequest() {
   const paymentDataRequest = Object.assign({}, getGooglePaymentsConfiguration());
   paymentDataRequest.transactionInfo = {
     totalPriceStatus: 'FINAL',
-    totalPrice: '1.00',
+    totalPrice: '01.00',
     currencyCode: 'USD',
     countryCode: 'US'
   };
