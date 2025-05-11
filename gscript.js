@@ -46,13 +46,13 @@ function getPaymentDataRequest() {
   const paymentDataRequest = Object.assign({}, getGooglePaymentsConfiguration());
   paymentDataRequest.transactionInfo = {
     totalPriceStatus: 'FINAL',
-    totalPrice: '12.00',
+    totalPrice: '1.00',
     currencyCode: 'USD',
     countryCode: 'US'
   };
   paymentDataRequest.merchantInfo = {
-    merchantId: '01234567890123456789', // Optional in TEST mode
-    merchantName: 'T-Shirt Store'
+    merchantId: 'BCR2DN4T267YFFZN', // Optional in TEST mode
+    merchantName: 'Youth Research Journal'
   };
   return paymentDataRequest;
 }
@@ -62,7 +62,7 @@ function onGooglePaymentButtonClicked() {
   paymentsClient.loadPaymentData(paymentDataRequest)
     .then(function(paymentData) {
       console.log("Payment successful!", paymentData);
-      alert("Payment simulated! In real implementation, send to backend.");
+      alert("Payment successful!");
     })
     .catch(function(err) {
       console.error("Payment failed:", err);
