@@ -20,16 +20,24 @@
   <input name="lastName" type="text" placeholder="Last Name">
   <button type="submit">Send</button>
 </form>
+    <span id="subsid"></span>
   </div>
 
   <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxwJfZuGHnWBcX4SON32OwzywcjddUbKQl1ZXDUCQLcjlbKmLqcBXt4MJ-gr_g30a0qmg/exec'
   const form = document.forms['submit-to-google-sheet']
+    const SubId = document.getElementById("subsid")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response =>{
+        SubId.innerHTML = "Thank You for Subscribing us!"
+        setTimeout(function(){
+           SubId.innerHTML = ""
+        },3000)
+        form.reset()
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
