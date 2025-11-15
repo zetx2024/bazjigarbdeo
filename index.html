@@ -1,12 +1,14 @@
-<!DOCTYPE html>
+
+
+
+
+
+  
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bangladesh Economics Olympiad 2025</title>
 
-
-  <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4CN8NP0KN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,250 +17,362 @@
 
   gtag('config', 'G-N4CN8NP0KN');
 </script>
-
   
-  <style>
-    :root {
-      --main-color: #28a745;
-      --secondary-color: #e9f5ec;
-      --text-color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Economics Olympiad </title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--secondary-color);
-      color: var(--text-color);
-      scroll-behavior: smooth;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    header {
-      background-color: var(--main-color);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
 
-    header h1 {
-      color: white;
-      margin: 0;
-    }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: bold;
-    }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
 
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 5rem 2rem;
-      background-color: #ffffff;
-    }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
 
-    .hero h2 {
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-    }
+        .content {
+            font-size: 1.1rem;
+        }
 
-    .countdown {
-      font-size: 2rem;
-      color: var(--main-color);
-      margin: 1rem 0;
-    }
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
 
-    .btn-register {
-      position: relative;
-      background-color: var(--main-color);
-      color: white;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      margin-top: 1rem;
-      text-decoration: none;
-      overflow: hidden;
-    }
+        .highlight {
+            background-color: #fff9c4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
 
-    .btn-register span {
-      position: relative;
-      z-index: 1;
-    }
+        .quote {
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
 
-    .btn-register::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300%;
-      height: 300%;
-      background: rgba(255, 255, 255, 0.4);
-      transform: translate(-50%, -50%) scale(0);
-      border-radius: 50%;
-      animation: ripple 2s infinite ease-out;
-      z-index: 0;
-    }
+        .emphasis {
+            font-weight: bold;
+            color: #2c3e50;
+        }
 
-    @keyframes ripple {
-      0% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translate(-50%, -50%) scale(1.5);
-        opacity: 0;
-      }
-    }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #3498db, transparent);
+            margin: 30px 0;
+        }
 
-    footer {
-      background-color: var(--main-color);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
 
-    .social-icons {
-      margin-top: 0.5rem;
-    }
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
 
-    .social-icons a {
-      color: white;
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
+        body.dark-mode .container {
+            background-color: #2d2d2d;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
 
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-      }
+        body.dark-mode h1 {
+            color: #ecf0f1;
+        }
 
-      nav a {
-        margin: 0.5rem 0;
-      }
-    }
-.gallery-section {
-  padding: 2rem;
-  background-color: #ffffff;
-  text-align: center;
-}
+        body.dark-mode .subtitle {
+            color: #bdc3c7;
+        }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
+        body.dark-mode .highlight {
+            background-color: #34495e;
+            color: #ecf0f1;
+        }
 
-.gallery img {
-  max-height: 120px;
-  width: auto;
-  margin: 0 auto;
-  object-fit: contain;
-  padding: 10px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
+        body.dark-mode .emphasis {
+            color: #ecf0f1;
+        }
 
+        body.dark-mode .quote {
+            color: #bdc3c7;
+            border-left-color: #3498db;
+        }
 
-.gallery img:hover {
-  transform: scale(1.03);
-}
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
 
-  </style>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .content {
+                font-size: 1rem;
+            }
+            
+            .theme-toggle {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>BDEO 2025</h1>
-    <nav>
-      <a href="https://reg.bdeo.org">Register Now</a>
-      <a href="#preparation">Preparation</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Bangladesh Economics Olympiad 2025</h2>
-    <div class="countdown" id="countdown"></div>
-    <a href="https://reg.bdeo.org" class="btn-register" target="_blank"><span>Register Now</span></a>
-  </section>
-
-  <section id="registration" style="padding: 2rem;">
-    <h2>Important Notes</h2>
-    <ul>
-      <li>Click the button above to complete your registration through the official Google Form. Registration Deadline: May 12, 2025.</li>
-      <li>The BDEO 2025 Selection Round exam will be held on May 16, 2025, at 9:00 PM (Bangladesh Standard Time). Access the exam via (https://exam.bdeo.org) link on the scheduled date.</li>
-    </ul>
-  </section>
-
-  <section id="preparation" style="padding: 2rem;">
-    <h2>Preparation Resources</h2>
-    <ul>
-      <li><a href="https://drive.google.com/file/d/1atdMsmDsbOXWu0kyCp2p81C5hdZAxEXJ/view?usp=sharing">BDEO Textbook</a></li>
-      <li><a href="https://drive.google.com/drive/folders/1AIuRgukkZdOlGi4LkAMSpX9sGLdxkFb_?usp=drive_link">BDEO Question Paper 2022</a></li>
-      <li><a href="https://drive.google.com/drive/folders/1dwxqarDcWEwR_PEmvzpFIqMp1xAXGBpC?usp=drive_link">BDEO Question Paper 2023</a></li>
-       <li><a href="https://drive.google.com/drive/folders/1MM5HqEFCAajkzhB59qDy5hqG3Pd_HvC7?usp=drive_link">BDEO Question Paper 2024</a></li>
-      <li><a href="https://ieo-official.org/prepare">IEO Syllabus & Guideline</a></li>
-
-    </ul>
-  </section>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
     
-<section id="Our_Affiliates" class="gallery-section">
-  <h2>Our Affiliates</h2>
-  <div class="gallery">
-    <img src="https://files.ieo-official.org/Logo/Logo_IEO_RGB_main_2.png" alt="International Economics Olympiad (IEO)">
-    <img src="https://exam.bdeo.org/wec.png" alt="World Economics Cup">
-  </div>
-</section>
-    
-  <footer>
-     <div class="social-icons">
-      <a href="https://www.facebook.com/BdEO.Official" target="_blank"> Find us on <i class="fab fa-facebook"></i></a>
-    </div> 
-  </br>
-    &copy; Bangladesh Economics Olympiad Foundation Built with ❤️ by  <a href="https://md-sanaul-haque-shanto.github.io/" target="_blank">Md Sanaul Haque Shanto</a>.
-   
-  </footer>
+    <div class="container">
+        <header>
+            <h1>Bangladesh Economics Olympiad</h1>
+            <p class="subtitle"> Born of Bangladesh Economics Olympiad</p>
+        </header>
+        
+        <div class="content">
+            <p>
+                You guys thought this is a Bangladesh Economics Olympiad website! It might feel like it, but the real story is completely different.
+            </p>
+            
+            <p>
+                Hello everyone. I am <span class="emphasis">Sanaul Haque</span>, a competitive programmer since 2015. I started coding by building animated wishing websites, Android applications, and many more fun things. I never learned coding to make money, and I never had the goal of working at FAANG.
+            </p>
+            
+            <p>
+                I barely had friends. I got a computer right after I was born, and at one point I even lost interest in playing video games. Instead, I tried to build things and ended up deleting Windows XP C-drive folders many times. I also had a Sony Cybershot camera since 2010, but after doing a lot of experiments and messing up many things, I tried installing Linux and accidentally formatted my whole childhood memories. From that moment, I learned that nothing on a digital device is permanent, and I bought an external hard disk. Every loss gave me something new to learn.
+            </p>
+            
+            <div class="quote">
+                "Every loss gave me something new to learn."
+            </div>
+            
+            <p>
+                Even though I lived in a tier-1 city, I became very lonely. I had nothing to do except study. I studied at a top district school and was admitted through entrance exams, so I was not an average student. I received grades like A in Cambridge Education and A+ in National Education. I had friends from class 3 to 8, but I lost my best friend because of school politics, and after that I thought I would never make anyone my best friend again.
+            </p>
+            
+            <p>
+                Later, I met a guy who was interested in computers. My older sister was learning C programming in 2015, so I became interested too. I saw that HTML was a funny and enjoyable thing, because I could build anything and people could browse it from anywhere. So I started learning HTML, CSS, and JavaScript.
+            </p>
+            
+            <div class="section-divider"></div>
+            
+            <p>
+                In my senior year, I thought I should love someone because you know how hormones work at that age. I focused on making her happy by creating special animations, applications, and wishing websites. I did this for 7 years repeatedly, and eventually built a small software company called <span class="emphasis"><a href="https://partridgelab.github.io/">Partrigde Lab</a></span>, earning more than 1,000 USD per month. But nothing worked the way I imagined, and I stopped the company because I was not enjoying earning money anymore. Since then, I have remained single.
+            </p>
+            
+            <p>
+                One day at school, some university students came to promote a programming contest. I participated and met a junior from my school who also joined the contest. We became friends. I also met another guy who was a bookworm and loved reading detective books, history, and many other genres. I made him my friend because I thought he was a different kind of person, and I was also a different kind of person.
+            </p>
+            
+            <p>
+                After the programming contest, we became very close. We even developed family relationships because we were from the same school and held similar ideologies. Then I realized something that scared me. This would not be the same in the future. After graduating, we would all leave our place and our memories behind.
+            </p>
+            
+            <div class="quote">
+                "I built it simply to keep a connection alive."
+            </div>
+            
+            <p>
+                So I decided to build a platform where I could host any event and have a real reason to talk with my olympiad seniors, juniors, and my two friends. I did not build anything for money, fame, attention, followers, or anything like that. I built it simply to keep a connection alive.
+            </p>
+            
+            <div class="section-divider"></div>
+            
+            <p>
+                In 2018, I built a platform called <span class="emphasis"><a href="https://www.youtube.com/watch?v=N75LFb6YPx8">ArenaBoard Online Judge</a></span>, where anyone could host programming and quiz competitions, use real-time leaderboards, automated proctoring, and many more features using a Service Oriented Architecture. I hosted <span class="emphasis">ArenaBoard Mega Contest 2019</span> in December. My two friends helped by uploading quizzes and doing extra work, but nothing related to building or coding.
+            </p>
+            
+            <p>
+                After the mega contest, I realized I needed to make the platform more advanced, but I had no funding. Even though in 2018 I had cloud platform sponsorship for 2 years (which I managed in 2017), I still needed more support for the next steps.
+            </p>
+            
+            <p>
+                So I searched for an international olympiad that was not available in Bangladesh at that time. I mailed the <span class="emphasis">International Economics Olympiad</span> and they replied that they already had another offer from Prothom Alo and BDOSN. I sent them the platform details, and they became interested and provided ArenaBoard the authorization to conduct the Bangladesh National Event.
+            </p>
+            
+            <p>
+                During this time, I was developing new features for ArenaBoard while maintaining my education. I assigned Rafid to handle external communication, but in reality, most of the work was done by me. If you look at the <a href="https://www.facebook.com/events/598080824019998">BDEO 2019 posters</a>, you will see a lot of errors, grammatical mistakes, and even my personal phone number. I was the one who posted posters in schools, universities, and English-medium institutions in Dhaka.
+            </p>
+            
+            <p>
+                We also applied for the ICT Division Innovation Fund, and I gave Rafid the responsibility because I already had too much work.
+            </p>
+            
+            <div class="section-divider"></div>
+            
+            <p>
+                After receiving international authorization, I still had no funding and no economics background. So we tried to seek guidance from my high-school alumni who studied Economics at Dhaka University. His name was Timur, and he introduced us to a professor of Dhaka School of Economics, <span class="emphasis">Md. Alamin Parvez</span>. He extended his hand to help us, and that was the reason we were finally able to host the event. For the first year, he spent his own money for international travel. This meant a lot to me.
+            </p>
+            
+            <p>
+                Everything at that time felt magical, because I had no funds, yet everything worked out.
+            </p>
+            
+            <div class="quote">
+                "Everything at that time felt magical, because I had no funds, yet everything worked out."
+            </div>
+            
+            <p>
+                Along with that, we received the ICT Division Fund, and this became the beginning of the destruction of ArenaBoard. We applied to the Innovation Fund quite casually. Our project was already built, and the proposed project did not apply to us because I had cloud sponsorship. This meant most of the fund was unnecessary for the project. I thought the project should still charge for development and running costs, which was around 50 percent. In my mind, I also thought about buying printing equipment like heat-press machines, printers, sublimation printing tools, t-shirts, and similar items, so we would never have difficulties arranging goodies again.
+            </p>
+            
+            <p>
+                So I charged 50 percent of the fund because I also needed to market it. But then one of our teammates created noise and complained. Nobody listened to me even though the platform was mine, the idea was mine, and everything was built by me. Yet my voice was not recognized.
+            </p>
+            
+            <p>
+                Then I said, I will not submit my project code to the ICT Division because this is my personal project.
+            </p>
+            
+            <p>
+                At that point, I felt I had nothing left in Dhaka. I thought I should return to my home district and focus on my studies. I knew I was a skilled programmer, and I could build anything anytime. So I finished everything with them and moved on with my life.
+            </p>
+            
+            <div class="section-divider"></div>
+            
+            <p>
+                Now I am a teacher, a researcher, a programmer, and someone who hosts international competitions around the world. I have no interest in the Bangladesh Economics Olympiad and no reason or benefit to destroy them.
+            </p>
+            
+            <p>
+                Even the Bangladesh Economics Olympiad logo was created by my friend <span class="emphasis">Sajid Hasan</span>, who is also a great programmer, developed many applications and platforms like ACS, and does fun experimental projects like https://chithi.me.
+            </p>
+            <p>Actually I don't have time to add images, Visit my Linkedin, Portfolio website, and youtube videos. <a href="https://md-sanaul-haque-shanto.github.io/">Sanaul Haque</a></p>
+            <p class="emphasis" style="text-align: center; font-size: 1.3rem; margin-top: 30px;">
+                Haha bye!
+            </p>
+        </div>
+        
+        <footer>
+            <p>© 2020 Sanaul Haque - All Rights Reserved</p>
+        </footer>
+    </div>
 
-  <script>
-    const countdownEl = document.getElementById('countdown');
-    const targetDate = new Date('2025-05-12T17:59:00Z').getTime();
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-      if (distance < 0) {
-        countdownEl.innerHTML = "Registration Closed!";
-      }
-    }
-
-    setInterval(updateCountdown, 1000);
-  </script>
-
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to light
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Apply the saved theme on page load
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggle.textContent = '☀️';
+        }
+        
+        // Toggle theme when button is clicked
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            }
+        });
+        
+        // Add subtle fade-in animation for content
+        document.addEventListener('DOMContentLoaded', function() {
+            const content = document.querySelector('.content');
+            content.style.opacity = '0';
+            content.style.transition = 'opacity 1s ease-in-out';
+            
+            setTimeout(() => {
+                content.style.opacity = '1';
+            }, 300);
+        });
+    </script>
 </body>
 </html>
